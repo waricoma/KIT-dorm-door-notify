@@ -1,0 +1,29 @@
+{
+  "include": [
+    "$(MODDABLE)/examples/manifest_base.json",
+    "$(MODULES)/pins/digital/manifest.json",
+    "$(MODDABLE)/examples/manifest_net.json"
+  ],
+  "modules": {
+    "*": [
+       "./main",
+       "$(MODULES)/network/wifi/*",
+       "$(MODULES)/network/http/*"
+    ]
+  },
+  "preload": [
+		"wifi"
+	],
+  "platforms": {
+    "esp": {
+      "modules": {
+        "*": "$(MODULES)/network/wifi/esp/*"
+      }
+    },
+    "esp32": {
+      "modules": {
+        "*": "$(MODULES)/network/wifi/esp32/*"
+      }
+    }
+  }
+}
