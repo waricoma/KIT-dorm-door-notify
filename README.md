@@ -1,5 +1,7 @@
 # KIT-dome-door-notify
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/waricoma/KIT-dome-door-notify.svg)](https://greenkeeper.io/)
+
 The room door open and close event send to Slack channel.
 
 ## process.env.ACCESS_KEY
